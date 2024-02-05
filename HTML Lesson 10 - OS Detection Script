@@ -1,0 +1,47 @@
+// This script tests the users browser to see which one they are using. Adapt this script to do two other things:
+// If the browser is Chrome, alert "Ah ha, I see that you are using Chrome"
+// Also test to see if the user is using Mac, Windows, or something else.
+// <script>
+// var browser = navigator.userAgent;
+// console.log(browser)
+// if (browser.indexOf("Firefox") > -1) {
+//     alert("Ah ha, you’re using Firefox!");
+// }
+// </script>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Browser and OS Detection</title>
+</head>
+<body>
+
+<script>
+    var browser = navigator.userAgent;
+    console.log(browser);
+
+    if (browser.indexOf("Firefox") > -1) {
+        alert("Ah ha, you’re using Firefox!");
+    }
+
+    if (browser.indexOf("Chrome") > -1) {
+        alert("Ah ha, I see that you are using Chrome");
+    }
+
+    var os;
+    if (browser.indexOf("Mac") > -1) {
+        os = "Mac OS";
+    } else if (browser.indexOf("Windows") > -1) {
+        os = "Windows";
+    } else {
+        os = "Other";
+    }
+
+    alert("You are using " + os);
+</script>
+
+</body>
+</html>
+```
