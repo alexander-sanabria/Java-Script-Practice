@@ -1,0 +1,26 @@
+// Create a 'Cookbook' program: it can contain recipes for anything.
+// Prompt the user for a recipe name, then for at least three ingredients.
+// Use a multidimensional (jagged) array to store this information.
+// When the user is done adding items, print out the recipe names and ingredients to the console.
+
+```
+var recipes = [];
+while (true) {
+  var recipeName = prompt("Enter a recipe name (or type 'exit' to finish):");
+  if (recipeName.toLowerCase() === 'exit') {
+      break;
+  }
+  var ingredients = [];
+  for (var i = 0; i < 3; i++) {
+      var ingredient = prompt("Enter ingredient " + (i + 1) + " for " + recipeName + ":");
+      ingredients.push(ingredient);
+  }
+  recipes.push([recipeName, ingredients]);
+  }
+console.log("Recipes:");
+for (var i = 0; i < recipes.length; i++) {
+    console.log("Recipe Name: " + recipes[i][0]);
+    console.log("Ingredients: " + recipes[i][1].join(', '));
+    console.log("---------------");
+}
+```
