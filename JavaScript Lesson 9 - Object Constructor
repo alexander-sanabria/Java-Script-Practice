@@ -1,0 +1,32 @@
+//  Create your own object Constructor for a book.
+// Add 5 different properties like title, author, publish date, edition, etc.
+// Add the command that adds a new book to the array
+// Add a loop that uses "console.log" to output the object's properties to the console log.
+ 
+
+```
+function Book(title, author, publishDate, edition) {
+  this.title = title;
+  this.author = author;
+  this.publishDate = publishDate;
+  this.edition = edition;
+}
+let bookArray = [];
+function addBook(title, author, publishDate, edition) {
+  let newBook = new Book(title, author, publishDate, edition);
+  bookArray.push(newBook);
+}
+addBook("The Great Gatsby", "F. Scott Fitzgerald", "1925-04-10", 1);
+addBook("To Kill a Mockingbird", "Harper Lee", "1960-07-11", 2);
+addBook("1984", "George Orwell", "1949-06-08", 1);
+addBook("The Hobbit", "J.R.R. Tolkien", "1937-09-21", 1);
+addBook("Harry Potter and the Sorcerer's Stone", "J.K. Rowling", "1997-06-26", 1);
+for (let i = 0; i < bookArray.length; i++) {
+  console.log(`Book ${i + 1}:`);
+  console.log(`Title: ${bookArray[i].title}`);
+  console.log(`Author: ${bookArray[i].author}`);
+  console.log(`Publish Date: ${bookArray[i].publishDate}`);
+  console.log(`Edition: ${bookArray[i].edition}`);
+  console.log("\n");
+}
+```
