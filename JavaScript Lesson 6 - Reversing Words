@@ -1,0 +1,11 @@
+// Create a function that takes in a word from the user (prompt the user).
+// Reverse the word and display it back to the user
+
+```
+function reverseWord() {
+  var userWord = prompt("Enter a word:");
+  var reversedWord = userWord.split('').reverse().join('');
+      alert("Reversed Word: " + reversedWord);
+  }
+reverseWord();
+```
