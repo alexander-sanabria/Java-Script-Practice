@@ -1,0 +1,31 @@
+#Create the following script in a new REPL:
+# Prompt the user for two numbers.
+# Alert the result of multiplying the two numbers
+# Optional: ask the use what they want to do with the numbers - multiple them,  add them, subtract them, or divide them, then present the answer.
+
+```
+var firstNumber = parseFloat(prompt("Enter the first number:"));
+var secondNumber = parseFloat(prompt("Enter the second number:"));
+var operation = prompt("What operation do you want to perform? (multiply, add, subtract, or divide)");
+var result;
+
+if (operation === "multiply") {
+    result = firstNumber * secondNumber;
+    alert("The result of multiplying " + firstNumber + " and " + secondNumber + " is: " + result);
+} else if (operation === "add") {
+    result = firstNumber + secondNumber;
+    alert("The result of adding " + firstNumber + " and " + secondNumber + " is: " + result);
+} else if (operation === "subtract") {
+    result = firstNumber - secondNumber;
+    alert("The result of subtracting " + secondNumber + " from " + firstNumber + " is: " + result);
+} else if (operation === "divide") {
+    if (secondNumber !== 0) {
+        result = firstNumber / secondNumber;
+        alert("The result of dividing " + firstNumber + " by " + secondNumber + " is: " + result);
+    } else {
+        alert("Error: Division by zero is not allowed.");
+    }
+} else {
+    alert("Invalid operation. Please choose 'multiply', 'add', 'subtract', or 'divide'.");
+}
+```
