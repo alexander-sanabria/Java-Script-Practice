@@ -1,5 +1,5 @@
-# Come up with three to four sentence paragraph, decide which words you will replace with variables and make a list of corresponding parts of speech. You should ask specifically for "a noun", "an adjective", "a number", corresponding to how many elements you need.
-# Example: It is a period of <ADJECTIVE> <NOUN>. Rebel <NOUN, plural>, striking from a <ADJECTIVE> <NOUN>, have won their <NUMBER> victory against the evil <NOUN>.
+// Come up with three to four sentence paragraph, decide which words you will replace with variables and make a list of corresponding parts of speech. You should ask specifically for "a noun", "an adjective", "a number", corresponding to how many elements you need.
+// Example: It is a period of <ADJECTIVE> <NOUN>. Rebel <NOUN, plural>, striking from a <ADJECTIVE> <NOUN>, have won their <NUMBER> victory against the evil <NOUN>.
 
 ```
 var place = prompt("Enter a place:");
