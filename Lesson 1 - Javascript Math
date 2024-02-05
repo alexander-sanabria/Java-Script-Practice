@@ -1,7 +1,7 @@
-# Create the following script:
-# Prompt the user for two numbers
-# Alert the result of multiplying the two numbers
-# Optional: ask the use what they want to do with the numbers - multiple them,  add them, subtract them, or divide them, then present the answer
+// Create the following script:
+// Prompt the user for two numbers
+// Alert the result of multiplying the two numbers
+// Optional: ask the use what they want to do with the numbers - multiple them,  add them, subtract them, or divide them, then present the answer
 
 ```
 var firstNumber = parseFloat(prompt("Enter the first number:"));
