@@ -1,9 +1,9 @@
-# Write a program that provides a weather alert. Make sure your program does the following:
-# Set the temperature to be a variable.
-# Use either an IF statement or a SWITCH statement to determine what type of advisory to give for the temperature variable.
-# If the temperature is 90 degrees or above, the program alerts a heat advisory
-# If the temperature is 80 - 90, the program alerts a heat warning
-# Do for three more levels of temperatures.
+// Write a program that provides a weather alert. Make sure your program does the following:
+// Set the temperature to be a variable.
+// Use either an IF statement or a SWITCH statement to determine what type of advisory to give for the temperature variable.
+// If the temperature is 90 degrees or above, the program alerts a heat advisory
+// If the temperature is 80 - 90, the program alerts a heat warning
+// Do for three more levels of temperatures.
 
 ```
 let temperature = 88;
