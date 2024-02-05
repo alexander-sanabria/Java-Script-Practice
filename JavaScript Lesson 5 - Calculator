@@ -1,0 +1,28 @@
+// Create a calculator script. It should:
+// Prompt the user for two numbers.
+// Prompt the user for the operator that they would like to use ... addition, subtraction, multiplication, division.
+// Pass the two numbers and the operator into a function
+// In the function, perform the calculation  (for example you can use an IF or SWITCH statement to perform the operation)
+// Display the results either as an alert or in the console.log.
+
+```
+function calculate(num1, num2, operator) {
+    switch (operator) {
+        case "+":
+            return num1 + num2;
+        case "-":
+            return num1 - num2;
+        case "*":
+            return num1 * num2;
+        case "/":
+            return num2 !== 0 ? num1 / num2 : "Cannot divide by zero!";
+        default:
+            return "Invalid operator";
+    }
+}
+var number1 = parseFloat(prompt("Enter the first number:"));
+var number2 = parseFloat(prompt("Enter the second number:"));
+var operator = prompt("Enter the operator (+, -, *, /):");
+var result = calculate(number1, number2, operator);
+console.log("Result: " + result);
+```
