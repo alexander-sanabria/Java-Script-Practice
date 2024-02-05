@@ -1,6 +1,6 @@
-# First, create a JavaScript program that defines, as an array, a list of 10 of your favorite things.
-# Then, using any loop that you wish (i.e. for, forEach, do/while, etc) print each item from the array to the console.
-# Lastly, with the same script, add an if statement to test if you are on item #3, if so, print out "Wonderful, made it to item 3!", and then continue with the loop as normal.
+// First, create a JavaScript program that defines, as an array, a list of 10 of your favorite things.
+// Then, using any loop that you wish (i.e. for, forEach, do/while, etc) print each item from the array to the console.
+// Lastly, with the same script, add an if statement to test if you are on item #3, if so, print out "Wonderful, made it to item 3!", and then continue with the loop as normal.
 
 ```
 console.log("Script 1: Printing favorite things using forEach");
