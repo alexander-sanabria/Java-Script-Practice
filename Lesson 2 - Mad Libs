@@ -1,0 +1,13 @@
+# Come up with three to four sentence paragraph, decide which words you will replace with variables and make a list of corresponding parts of speech. You should ask specifically for "a noun", "an adjective", "a number", corresponding to how many elements you need.
+# Example: It is a period of <ADJECTIVE> <NOUN>. Rebel <NOUN, plural>, striking from a <ADJECTIVE> <NOUN>, have won their <NUMBER> victory against the evil <NOUN>.
+
+```
+var place = prompt("Enter a place:");
+var time = prompt("Enter a time:");
+var personName = prompt("Enter a name (a proper noun):");
+var verb = prompt("Enter a verb:");
+var adverb = prompt("Enter an adverb:");
+var noun = prompt("Enter a noun:");
+var madLibStory = "In the heart of " + place + " at " + time + ", " + personName + " stood and " + verb + " " + adverb + " beneath the stars, holding a " + noun + " in their hand.";
+alert("Here's your Mad Lib story:\n\n" + madLibStory);
+```
