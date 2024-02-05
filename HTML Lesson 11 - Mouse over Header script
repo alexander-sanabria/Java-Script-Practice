@@ -1,0 +1,54 @@
+// This script checks to see if the user mouses over the Header text, and if they do, it changes the text that they see on the screen. 
+// Add to this script two new HTML elements, like an <A href  or an <IMG (or any other block level element), and a block of text wrapped in a <P>. 
+// Attach an "onClick" method to the first tag, so that when it is clicked, the text inside the <P> tag changes.
+// <html>
+//  <head>
+//     <title>My page</title>
+//  </head>
+//  <body>
+// <script>
+//    function changeIt() {
+// document.getElementById("header").innerHTML="This is the new header text";
+//    }
+// </script>
+//     <h1 id="header" onMouseOver="changeIt();">This is the header</h1>
+//     <p>This is the body text</p>
+// </body>
+// </html>
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Browser and OS Detection</title>
+</head>
+<body>
+
+<script>
+    var browser = navigator.userAgent;
+    console.log(browser);
+
+    if (browser.indexOf("Firefox") > -1) {
+        alert("Ah ha, you’re using Firefox!");
+    }
+
+    if (browser.indexOf("Chrome") > -1) {
+        alert("Ah ha, I see that you are using Chrome");
+    }
+
+    var os;
+    if (browser.indexOf("Mac") > -1) {
+        os = "Mac OS";
+    } else if (browser.indexOf("Windows") > -1) {
+        os = "Windows";
+    } else {
+        os = "Other";
+    }
+
+    alert("You are using " + os);
+</script>
+
+</body>
+</html>
+```
