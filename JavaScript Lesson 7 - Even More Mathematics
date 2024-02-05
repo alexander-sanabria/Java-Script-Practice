@@ -1,0 +1,19 @@
+// You can create a random number using the following:
+// var randomNumber = Math.floor(Math.random()*10)+1
+// This create a random number between one and ten. Change the "10" to "12" and you create a random number between 1 and 12. Make sense?
+// Write a program that prompts the user for a number.
+// Then, generate a random number between 1 and 10, and multiple the users number with this new number that you just created.
+// Output the new number you created by multiplying the user number and your random number to user using a prompt and ask them what they think your random number is.
+// Evaluate the user input. If they are right, indicate that in an alert. If they are wrong, indicate that and provide the correct answer in an alert.
+
+```
+var userNumber = parseFloat(prompt("Enter a number:"));
+var randomNumber = Math.floor(Math.random() * 10) + 1;
+var result = userNumber * randomNumber;
+var userGuess = parseFloat(prompt("What is " + userNumber + " multiplied by the random number?"));
+if (userGuess === result) {
+    alert("Correct! The result is " + result);
+} else {
+    alert("Incorrect! The correct answer is " + result);
+}
+```
